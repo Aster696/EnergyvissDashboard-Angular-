@@ -1,0 +1,8 @@
+.card {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 85%;
+    text-align: center;
+    padding: 20px 10px;
+}

@@ -1,0 +1,109 @@
+<mat-card class="card">
+    <mat-card-header class="header">
+        <mat-card-title>
+            KEY PARAMETERS
+        </mat-card-title>
+    </mat-card-header>
+    <mat-grid-list [cols]="5" rowHeight="150px">
+        <!-- gauge 1 -->
+        <mat-grid-tile>
+            <div class="gauge">
+                <div class="gauge-body">
+                    <div 
+                        [style]="'transform: rotate('+gauge1+'deg);'"
+                        class="gauge-fill"
+                    ></div>
+                    <div class="gauge-cover"></div>
+                </div>
+                <div class="gauge-info">
+                    <div class="gauge-title">
+                        {{gauge1}}
+                    </div>
+                    <div class="gauge-subtitle">
+                        Voltage (V)
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <!-- gauge 2 -->
+        <mat-grid-tile>
+            <div class="gauge">
+                <div class="gauge-body">
+                    <div 
+                    [style]="'transform: rotate('+gauge2+'deg);'"
+                        class="gauge-fill"
+                    ></div>
+                    <div class="gauge-cover"></div>
+                </div>
+                <div class="gauge-info">
+                    <div class="gauge-title">
+                        {{gauge2}}
+                    </div>
+                    <div class="gauge-subtitle">
+                        Current (A)
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <!-- gauge 3 -->
+        <mat-grid-tile>
+            <div class="gauge">
+                <div class="gauge-body">
+                    <div 
+                    [style]="'transform: rotate('+gauge3+'deg);'"
+                        class="gauge-fill"
+                    ></div>
+                    <div class="gauge-cover"></div>
+                </div>
+                <div class="gauge-info">
+                    <div class="gauge-title">
+                        {{gauge3}}
+                    </div>
+                    <div class="gauge-subtitle">
+                        Power (kW)
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <!-- gauge 4 -->
+        <mat-grid-tile>
+            <div class="gauge">
+                <div class="gauge-body">
+                    <div 
+                    [style]="'transform: rotate('+gauge4+'deg);'"
+                        class="gauge-fill"
+                    ></div>
+                    <div class="gauge-cover"></div>
+                </div>
+                <div class="gauge-info">
+                    <div class="gauge-title">
+                        {{gauge4}}
+                    </div>
+                    <div class="gauge-subtitle">
+                        Power Factor (A)
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <!-- gauge 5 -->
+        <mat-grid-tile>
+            <div class="gauge">
+                <div class="gauge-body">
+                    <div 
+                    [style]="'transform: rotate('+gauge5+'deg);'"
+                        class="gauge-fill"
+                    ></div>
+                    <div class="gauge-cover"></div>
+                </div>
+                <div class="gauge-info">
+                    <div class="gauge-title">
+                        {{gauge5}}
+                    </div>
+                    <div class="gauge-subtitle">
+                        Frequency (Hz)
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</mat-card>

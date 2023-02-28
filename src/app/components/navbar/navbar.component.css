@@ -1,0 +1,13 @@
+.toolbar {
+    background-color: #0275d8;
+    color: #fff;
+    
+}
+
+.end-tabs {
+    margin-left: auto;
+}
+
+.tab {
+    margin: 0 10px;
+}

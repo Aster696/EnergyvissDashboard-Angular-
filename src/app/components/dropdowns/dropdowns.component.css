@@ -1,0 +1,15 @@
+.card {
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.content {
+    padding-top: 5px;
+    margin: auto;
+    font-weight: 500;
+}
+
+.label {
+    margin-left: 40px;
+}

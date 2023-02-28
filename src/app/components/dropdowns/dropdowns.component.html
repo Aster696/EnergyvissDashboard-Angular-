@@ -1,0 +1,61 @@
+<mat-card class="card">
+    <mat-card-content class="content">
+        <!-- floor -->
+        <label>
+            FLOOR: 
+        </label>
+        <mat-form-field appearance="fill">
+            <mat-label>Floor</mat-label>
+            <mat-select value="1">
+                <mat-option 
+                    value="1"
+                >
+                    1
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- Section -->
+        <label class="label">
+            SECTION: 
+        </label>
+        <mat-form-field appearance="fill">
+            <mat-label>Section</mat-label>
+            <mat-select value="Lab 1">
+                <mat-option 
+                    value="Lab 1"
+                >
+                    Lab 1
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- View -->
+        <label class="label">
+            VIEW: 
+        </label>
+        <mat-form-field appearance="fill">
+            <mat-label>View</mat-label>
+            <mat-select value="Individual">
+                <mat-option 
+                    value="Individual"
+                >
+                    Individual
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- Meter -->
+        <label class="label">
+            METER: 
+        </label>
+        <mat-form-field appearance="fill">
+            <mat-label>Meter</mat-label>
+            <mat-select value="Meter 1">
+                <mat-option 
+                    *ngFor="let meter of Meters"
+                    [value]="meter"
+                >
+                    {{meter}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-content>
+</mat-card>

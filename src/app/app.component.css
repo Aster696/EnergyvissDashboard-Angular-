@@ -1,0 +1,9 @@
+.container {
+    height: auto;
+    padding: 0 10px;
+    background-color: whitesmoke;
+}
+
+.end-tab {
+    float: right;
+}

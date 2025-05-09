@@ -1,8 +1,16 @@
 .card {
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    width: 85%;
-    text-align: center;
-    padding: 20px 10px;
+    
+    position: relative;
+    margin: 0 auto;
+    width: 98%;
+    /* padding: 20px; */
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 0;
+
+    }
+}
+    

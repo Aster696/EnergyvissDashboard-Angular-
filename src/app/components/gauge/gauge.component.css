@@ -10,6 +10,7 @@
 .content {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .gauge {
@@ -55,8 +56,8 @@
     position: relative;
     top: -15px;
     text-align: center;
-    
 }
+
 .gauge-title {
     font-size: 30px;
 }
@@ -64,4 +65,50 @@
 .gauge-subtitle {
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* -----------------------------
+   RESPONSIVE STYLES
+----------------------------- */
+
+@media (max-width: 1024px) {
+    .gauge {
+        max-width: 120px;
+    }
+
+    .gauge-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gauge {
+        max-width: 100px;
+    }
+
+    .gauge-title {
+        font-size: 20px;
+    }
+
+    .gauge-subtitle {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gauge {
+        max-width: 90px;
+    }
+
+    .gauge-title {
+        font-size: 18px;
+    }
+
+    .gauge-subtitle {
+        font-size: 12px;
+    }
+
+    .card {
+        margin: 5px;
+    }
 }
